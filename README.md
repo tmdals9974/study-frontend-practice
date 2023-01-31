@@ -11,10 +11,19 @@
 - **[김민태의 프론트엔드 아카데미 : 제 3강 시나리오로 배우는 프론트엔드 실무](https://fastcampus.co.kr/dev_academy_kmt3)**
 
 ## 📌 프로젝트 개발 환경
-  ![Generic badge](https://img.shields.io/badge/nodejs-v14.21.2-blue.svg) ![Generic badge](https://img.shields.io/badge/npm-v6.14.17-blue.svg)
 
 - ![Generic badge](https://img.shields.io/badge/nodejs-v16.16.0-blue.svg) ![Generic badge](https://img.shields.io/badge/npm-v8.14.0-blue.svg)
+- Hosts
+
+```shell
+# 12shop hosts
+127.0.0.1 www.12shop.com
+127.0.0.1 12shop.com
+127.0.0.1 cdn.12shop.com
+127.0.0.1 api.12shop.com
+```
 
 ## 📝강의 정리 자료
 
 - [1장](docs/Chapter1.md)
+- [2장](docs/Chapter2.md)
