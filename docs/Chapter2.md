@@ -35,6 +35,7 @@
   - 개요
   - 목표 (서비스의 목표, 기대 효과 등)
   - 요구사항
+    - 프로젝트 요구사항 : `SEO`, `성능`
   - 개발 (핵심목표, 적정기술, 위험요소, 검토기술, 솔루션(최종선택기술) 등)
 
 ## 6. PoC vs prototype
@@ -63,3 +64,21 @@
         - Nodejs 서버를 이용하여 React만으로도 SSR 구현이 가능함. 직접 솔루션을 개발하며 시행착오를 겪지만 기능 제약은 없음.
       - `Next.js`
         - React SSR용 프레임워크. 빠른 개발이 가능하지만 프레임워크에서 지원하지 않는 기능은 개발할 수 없음.
+
+## 8. SSR Poc
+  - 프로젝트 실행 : [`b2c-server`](./projects/b2c-server.md), [`cdn`](./projects/cdn.md), [`poc-ssr-showcase`](./projects/poc-ssr-showcase.md) 실행
+  - PoC 계획 : 무엇을 확인할 것인가?
+    - Next.js SSR 라우트 구조 확인 (CSR 라우트와 다른 점, 데이터 흐름 등이 주요 관점)
+      - [파일 베이스 라우팅](http://nextjs.org/docs/routing/introduction)
+    - 페이지별 Meta Taging (가능 여부, 복잡도 여부)
+      - [next/head 컴포넌트 제공](http://nextjs.org/docs/api-reference/next/head)
+    - API Fetching (CSR과 다른 점 중점으로)
+      - Server side
+        - [getServerSideProps](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props)
+        - [getStaticProps](https://nextjs.org/docs/basic-features/data-fetching/get-static-props)
+      - [Client side](https://nextjs.org/docs/basic-features/data-fetching/client-side)
+      - [API gateway](https://nextjs.org/docs/api-routes/introduction)
+    - Next.js 기능 목록 체크 (현재 프로젝트에서 중요한 기능들 기준으로)
+      - [Image Optimization](https://nextjs.org/docs/basic-features/image-optimization)
+      - [Font Optimization](https://nextjs.org/docs/basic-features/font-optimization)
+  - 정석은 공식문서를 따라 진행하는 것이지만, 비슷한 작업을 많이한 능숙한 개발자라면 BolierPlate를 활용하는 것도 지름길임. 단, BolierPlate는 신뢰성이 없으니 조심하여 선택할 것.
