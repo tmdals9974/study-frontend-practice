@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev:all": "concurrently --kill-others \"npm run dev\" \"npm run css\"",
-    "dev": "RUNTIME=develop next dev -p 1203",
-    "dev:prod": "RUNTIME=prod next dev -p 1203",
+    "dev": "cross-env RUNTIME=develop next dev -p 1203",
+    "dev:prod": "cross-env RUNTIME=prod next dev -p 1203",
     "css": "tailwindcss -i ./css/main.css -o ./public/css/default.css --watch",
     "test": "cypress open",
     "build": "next build",
@@ -17,6 +17,7 @@
     "@sentry/react": "^7.11.1",
     "@sentry/tracing": "^7.11.1",
     "concurrently": "^7.3.0",
+    "cross-env": "^7.0.3",
     "next": "12.2.5",
     "postcss": "^8.4.16",
     "react": "18.2.0",
