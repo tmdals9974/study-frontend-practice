@@ -5,7 +5,7 @@ describe('12shop', () => {
     })
 
     it('load', () => {
-      cy.visit('http://www.12shop.com:7070')
+      cy.visit('http://localhost:1203')
     })
   
     it('displays full header', () => {
