@@ -6,7 +6,7 @@ import { Box, Text, Badge, Skeleton, SkeletonCircle, SkeletonText } from '@chakr
 import { StarIcon } from '@chakra-ui/icons';
 import { fetchProductOne } from '../common/store/features/product';
 import { buildCDNUrl } from '../common';
-import { AppLogger } from 'app-logger';
+// import { AppLogger } from 'app-logger';
 
 function Body({ config, data }) {
   if (!data) return <></>;
@@ -90,11 +90,11 @@ export default function ProductDetail() {
   const { id } = useParams();
 
   useEffect(() => {
-    AppLogger.add({ 
-      event: 'enter', 
-      screen: 'detail', 
-      user: 'ibare',
-    });
+    // AppLogger.add({ 
+    //   event: 'enter', 
+    //   screen: 'detail', 
+    //   user: 'ibare',
+    // });
   
     dispatch(fetchProductOne(id));
   }, []);

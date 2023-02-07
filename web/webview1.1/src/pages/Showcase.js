@@ -5,7 +5,7 @@ import { PageView, Header, SearchInput, ProductCard } from '../components';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchProducts } from '../common/store/features/product';
 import { buildCDNUrl } from '../common';
-import { AppLogger } from 'app-logger';
+// import { AppLogger } from 'app-logger';
 
 export default function Showcase() {
   const dispatch = useDispatch();
@@ -13,11 +13,11 @@ export default function Showcase() {
   const products = useSelector(state => state.product.items);
 
   useEffect(() => {
-    AppLogger.add({ 
-      event: 'enter', 
-      screen: 'home', 
-      user: 'ibare',
-    });
+    // AppLogger.add({ 
+    //   event: 'enter', 
+    //   screen: 'home', 
+    //   user: 'ibare',
+    // });
   
     dispatch(fetchProducts());
   }, []);
@@ -33,7 +33,8 @@ export default function Showcase() {
           
           return (
             <GridItem key={id}>
-              <Link to={`/detail/${id}`} onClick={() => AppLogger('home', 'click', 'ibare', 'product card') }>
+              {/* <Link to={`/detail/${id}`} onClick={() => AppLogger('home', 'click', 'ibare', 'product card') }> */}
+              <Link to={`/detail/${id}`}>
                 <ProductCard title={productName} url={imageUrl} />
               </Link>
             </GridItem>
