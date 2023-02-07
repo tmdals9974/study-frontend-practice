@@ -21,6 +21,7 @@
 127.0.0.1 12shop.com
 127.0.0.1 cdn.12shop.com
 127.0.0.1 api.12shop.com
+127.0.0.1 config.12shop.com
 ```
 
 ## 📝강의 정리 자료
