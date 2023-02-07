@@ -11,3 +11,9 @@
   - 플랫폼 최소 지원 버전 확인
   - WebView 구현 컴포넌트 확인 (웹뷰 컴포넌트에 따라 기능/호환성이 다름)
   - 웹뷰 기능 설정 확인 (쿠키, 로컬스티리지, 캐시 활성화 옵션 등.. )
+
+## 3. 단일 화면 웹뷰 구현
+  - 프로젝트 실행 : [`b2c-server`](./projects/b2c-server.md), [`cdn`](./projects/cdn.md), [`remote-config`](./projects/remote-config.md), [`webview1.1`](./projects/web.md#webview11), [`12shopapp`](./projects/12shopapp.md) 실행
+  - **storybook 사용 시 장점**
+    - 기획자와 디자이너가 페이지나 서비스 완성 전에 컴포넌트를 확인할 수 있다
+    - 스토리북을 만드는 과정에서 의존성을 제거하고 재사용성을 높일 수 있다

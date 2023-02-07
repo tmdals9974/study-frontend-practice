@@ -5,8 +5,8 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
 const initialState = {
-  status: {
-    items: false,
+  status: { //api status. 호출중인지.
+    items: false, 
     item: false,
   },
   items: [],
@@ -35,9 +35,9 @@ export const fetchProductOne = createAsyncThunk(
 export const productReducer = createSlice({
   name: 'product',
   initialState,
-  reducers: { },
+  reducers: { }, //리듀서 등록.
 
-  extraReducers: (builder) => {
+  extraReducers: (builder) => { //외부리듀서. 대체로 비동기코드가 들어감.
     builder
       .addCase(fetchProducts.pending, (state) => {
         state.status.items = false;
