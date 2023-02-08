@@ -41,6 +41,7 @@
   - redux toolkit
   - storybook
   - 프로젝트 실행 시, package.json의 Proxy를 통해 프록시서버가 실행된다. 프론트에서 api 요청 시 express서버에 요청이 간다. gateway/server.js 파일을 보면, express서버는 단순 중계기 역할만 한다.
+  - react-app-rewired (cra로 만든 프로젝트를 custom configuration할 수 있게 해주는 plugin)
 - ## 코멘트
   - storybook은 무조건 쓰라고 여러번 강조하심
   - 정말 간단한 express 서버를 만들어서 게이트웨이용으로 사용하셨음. CORS는 그냥 설정하면 되지않나 ..?? 일단 알아둘 것.
