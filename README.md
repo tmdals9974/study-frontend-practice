@@ -13,16 +13,6 @@
 ## 📌 프로젝트 개발 환경
 
 - ![Generic badge](https://img.shields.io/badge/nodejs-v16.16.0-blue.svg) ![Generic badge](https://img.shields.io/badge/npm-v8.14.0-blue.svg)
-- Hosts
-
-```shell
-# 12shop hosts
-127.0.0.1 www.12shop.com
-127.0.0.1 12shop.com
-127.0.0.1 cdn.12shop.com
-127.0.0.1 api.12shop.com
-127.0.0.1 config.12shop.com
-```
 
 ## 📝강의 정리 자료
 

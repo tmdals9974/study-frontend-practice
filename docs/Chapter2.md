@@ -19,7 +19,7 @@
 ## 3. 기술스택, 아키텍처 리뷰 2
 
 - b2c-server에 사용한 기술스택에 대한 간단한 리뷰
-- nestjs, typescript, typeORM, mysql, swagger (http://api.12shop.com:1202/api-docs)
+- nestjs, typescript, typeORM, mysql, swagger (http://localhost:1202/api-docs)
 
 ## 4. 기술스택, 아키텍처 리뷰 3
 

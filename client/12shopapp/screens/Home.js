@@ -26,7 +26,7 @@ const HomeScreen = ({ navigation }) => {
           <Text text30L>Marshall</Text>
           <Text text30L>Action2</Text>
           <Text text100M black20>키크론 K8 RGB 블루투스 무선 기계식 키보드 핫스왑 청축</Text>
-          <Image source={{ uri: "http://cdn.12shop.com:1201/01/large/34bdfd0a-671d-4ab1-b32c-59f0025fd7e4.jpg" }} height={200} width="100%" marginT-20 borderRadius={8} />
+          <Image source={{ uri: "http://localhost:1201/01/large/34bdfd0a-671d-4ab1-b32c-59f0025fd7e4.jpg" }} height={200} width="100%" marginT-20 borderRadius={8} />
           <View style={{ height: 120, marginTop: 60, flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center' }}>
             <Text h1 mint>320</Text><Text h2 mint style={{ marginTop: 22}}>people</Text>
           </View>

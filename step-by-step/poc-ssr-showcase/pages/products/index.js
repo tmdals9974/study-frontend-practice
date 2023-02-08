@@ -42,7 +42,7 @@ export default function Products(props) {
 }
 
 export async function getServerSideProps() {
-  const result = await axios.get('http://api.12shop.com:1202/products')
+  const result = await axios.get('http://localhost:1202/products')
   
   return {
     props: {

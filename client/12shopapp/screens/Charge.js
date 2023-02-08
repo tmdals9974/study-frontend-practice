@@ -7,7 +7,7 @@ const ChargeScreen = ({ navigation }) => {
     <SafeAreaView style={styles.wrap}>
       <WebView 
         style={styles.container}
-        source={{ uri: 'http://www.12shop.com:1206' }}
+        source={{ uri: 'http://localhost:1206' }}
         allowsFullscreenVideo
         textZoom={100} 
         javaScriptEnabled={true}

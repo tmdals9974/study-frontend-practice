@@ -11,7 +11,7 @@ const ShowcaseScreen = ({ navigation }) => {
     <SafeAreaView style={styles.wrap}>
       <WebView 
         style={styles.container}
-        source={{ uri: 'http://www.12shop.com:1204' }}
+        source={{ uri: 'http://localhost:1204' }}
         allowsFullscreenVideo
         textZoom={100} 
         javaScriptEnabled={true}

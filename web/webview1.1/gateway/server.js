@@ -5,7 +5,7 @@ const apiAdapter = require('./api-adapter');
 const messageBuilder = require('./message-builder');
 const app = express();
 const port = process.env.PORT || 1204;
-const remoteConfigUrl = `http://config.12shop.com:1200/config/develop`;
+const remoteConfigUrl = `http://localhost:1200/config/develop`;
 
 let apiServer;
 let remoteConfig;

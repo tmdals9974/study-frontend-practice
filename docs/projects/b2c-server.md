@@ -1,6 +1,6 @@
 # b2c-server
   - client용 API 서버
-  - 사용 기술 : nestjs, typescript, typeORM, mysql, swagger (http://api.12shop.com:1202/api-docs)
+  - 사용 기술 : nestjs, typescript, typeORM, mysql, swagger (http://localhost:1202/api-docs)
 
 ## setup
   - npm install
